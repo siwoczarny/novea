@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Theme from 'theme/Theme';
-import Menu from 'components/elements/Menu';
+import TopBar from 'components/elements/TopBar';
+import Header from 'components/elements/Header';
+import Footer from 'components/elements/Footer';
 
 const MainTemplate = ({ children }) => (
   <Theme>
-    <Menu />
+    <TopBar />
+    <Header />
     {children}
+    <Footer />
   </Theme>
 );
 

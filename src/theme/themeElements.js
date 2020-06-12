@@ -1,7 +1,7 @@
 export const themeElements = {
   white: '#fff',
   lightgrey: '#d8d8d8',
-  midiumgrey: '#595b6a',
+  mediumgrey: '#595b6a',
   darkgrey: '#434452',
   dimgrey: '#3a3b47',
   springgreen: '#52e0a8',
@@ -11,11 +11,11 @@ export const themeElements = {
   paleorange: '#ffb74f',
   darkkhaki: '#767674',
   fontSize: {
-    xxs: '1rem',
-    xs: '1.2rem',
+    xxs: '1.2rem',
+    xs: '1.4rem',
     s: '1.6rem',
     m: '2.1rem',
     l: '2.4rem',
-    xl: '4rem',
+    xl: '3.2rem',
   },
 };

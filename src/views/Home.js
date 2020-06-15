@@ -1,8 +1,12 @@
 import React from 'react';
 import HomeCarousel from 'components/parts/HomeCarousel';
+import HomeBrand from 'components/parts/HomeBrand';
 
-const Home = () => {
-  return <HomeCarousel />;
-};
+const Home = () => (
+  <>
+    <HomeCarousel />
+    <HomeBrand />
+  </>
+);
 
 export default Home;

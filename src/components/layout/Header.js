@@ -5,13 +5,12 @@ import logo from 'assets/logo/logo-nav.svg';
 import plusIcon from 'assets/icons/plus.svg';
 
 const StyledNavbar = styled(Navbar)`
-  padding: 0 16px;
+  padding: 7px 16px;
   height: 56px;
   display: flex;
   flex-direction: row;
   background-color: ${({ theme }) => theme.white};
   z-index: 999;
-
   @media (min-width: 992px) {
     padding: 0 32px;
   }
@@ -19,14 +18,14 @@ const StyledNavbar = styled(Navbar)`
 
 const StyledToggle = styled(Navbar.Toggle)`
   border: none;
-  font-size: 16px;
+  font-size: 24px;
   color: ${({ theme }) => theme.midnightblue};
 `;
 
 const StyledButton = styled(Button)`
   display: inherit;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border: none;
   background-image: url(${plusIcon});
   background-repeat: no-repeat;
@@ -40,9 +39,9 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledLink = styled(Nav.Link)`
-  padding: 12px 24px 8px;
+  padding: 8px 24px;
   font-size: ${({ theme }) => theme.fontSize.xs};
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.43;
   letter-spacing: 0.53px;
   color: ${({ theme }) => theme.dimgrey};

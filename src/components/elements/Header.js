@@ -1,11 +1,39 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import logo from 'assets/logo/logo-nav.svg';
+import plusIcon from 'assets/icons/plus.svg';
 
 const StyledNavbar = styled(Navbar)`
   padding: 0 32px;
   height: 56px;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 992px) {
+    padding: 0 16px;
+  }
+`;
+
+const StyledToggle = styled(Navbar.Toggle)`
+  border: none;
+  font-size: 16px;
+  color: ${({ theme }) => theme.midnightblue};
+`;
+
+const StyledButton = styled(Button)`
+  display: none;
+  @media (max-width: 992px) {
+    display: inherit;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-image: url(${plusIcon});
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14px;
+    background-color: ${({ theme }) => theme.springgreen};
+    outline: none;
+  }
 `;
 
 const StyledLink = styled(Nav.Link)`
@@ -27,10 +55,11 @@ const StyledLink = styled(Nav.Link)`
 
 const Menu = () => (
   <StyledNavbar expand="lg">
+    <StyledToggle aria-controls="basic-navbar-nav" />
     <Navbar.Brand href="#home">
       <img src={logo} alt="logo" />
     </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <StyledButton />
     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
       <StyledLink href="#oferta">Oferta</StyledLink>
       <StyledLink href="#spacjalisci">Specjaliści</StyledLink>

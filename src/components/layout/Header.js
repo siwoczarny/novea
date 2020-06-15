@@ -5,12 +5,15 @@ import logo from 'assets/logo/logo-nav.svg';
 import plusIcon from 'assets/icons/plus.svg';
 
 const StyledNavbar = styled(Navbar)`
-  padding: 0 32px;
+  padding: 0 16px;
   height: 56px;
   display: flex;
   flex-direction: row;
-  @media (max-width: 992px) {
-    padding: 0 16px;
+  background-color: ${({ theme }) => theme.white};
+  z-index: 999;
+
+  @media (min-width: 992px) {
+    padding: 0 32px;
   }
 `;
 
@@ -21,18 +24,18 @@ const StyledToggle = styled(Navbar.Toggle)`
 `;
 
 const StyledButton = styled(Button)`
-  display: none;
-  @media (max-width: 992px) {
-    display: inherit;
-    width: 32px;
-    height: 32px;
-    border: none;
-    background-image: url(${plusIcon});
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 14px;
-    background-color: ${({ theme }) => theme.springgreen};
-    outline: none;
+  display: inherit;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url(${plusIcon});
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 16px;
+  background-color: ${({ theme }) => theme.springgreen};
+  outline: none;
+  @media (min-width: 992px) {
+    display: none;
   }
 `;
 
@@ -43,13 +46,14 @@ const StyledLink = styled(Nav.Link)`
   line-height: 1.43;
   letter-spacing: 0.53px;
   color: ${({ theme }) => theme.dimgrey};
+  background-color: ${({ theme }) => theme.white};
 
   ${({ focus }) =>
     focus &&
     css`
       border-radius: 4px;
-      background-color: ${({ theme }) => theme.springgreen};
       color: ${({ theme }) => theme.white};
+      background-color: ${({ theme }) => theme.springgreen};
     `}
 `;
 

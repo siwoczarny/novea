@@ -1,8 +1,8 @@
 import React from 'react';
-import MainTemplate from 'components/templates/MainTemplate';
+import HomeCarousel from 'components/parts/HomeCarousel';
 
 const Home = () => {
-  return <MainTemplate />;
+  return <HomeCarousel />;
 };
 
 export default Home;

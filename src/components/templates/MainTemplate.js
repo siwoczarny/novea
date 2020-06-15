@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Theme from 'theme/Theme';
-import TopBar from 'components/elements/TopBar';
-import Header from 'components/elements/Header';
-import Footer from 'components/elements/Footer';
+import TopBar from 'components/layout/TopBar';
+import Header from 'components/layout/Header';
+import Footer from 'components/layout/Footer';
 
 const MainTemplate = ({ children }) => (
   <Theme>

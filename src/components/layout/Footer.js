@@ -7,16 +7,17 @@ const StyledWrapper = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 176px;
+  height: 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: ${({ theme }) => theme.dimgrey};
-  @media (max-width: 768px) {
-    height: 100px;
-    flex-direction: column;
-    justify-content: center;
+  z-index: 999;
+  @media (min-width: 992px) {
+    height: 176px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 `;
 
@@ -26,6 +27,7 @@ const InnerWappper = styled.div`
 `;
 
 const StyledLink = styled.a`
+  display: none;
   padding: 8px 0;
   font-size: ${({ theme }) => theme.fontSize.xxs};
   color: ${({ theme }) => theme.lightgrey};
@@ -33,7 +35,6 @@ const StyledLink = styled.a`
   ${({ flex }) =>
     flex &&
     css`
-      display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
@@ -43,20 +44,20 @@ const StyledLink = styled.a`
       background-color: ${({ theme }) => theme.darkgrey};
     `}
 
-  @media (max-width: 768px) {
-    display: none;
+  @media (min-width: 992px) {
+    display: flex;
   }
 `;
 
 const StyledCaption = styled.p`
-  padding: 16px 0 0;
+  padding: 8px 0 0;
   font-size: ${({ theme }) => theme.fontSize.xxs};
   line-height: 1.5;
   letter-spacing: 0.2px;
   text-align: center;
   color: ${({ theme }) => theme.lightgrey};
-  @media (max-width: 768px) {
-    padding: 8px 0 0;
+  @media (min-width: 992px) {
+    padding: 16px 0 0;
   }
 `;
 

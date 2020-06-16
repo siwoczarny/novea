@@ -101,7 +101,7 @@ const HomeSlider = () => (
       <StyledWrapper>
         <StyledBackground src={slide2} alt="slide" />
         <InnerWrapper>
-          <StyledTitle>Nowoczesne placówki NOVEA</StyledTitle>
+          <StyledTitle>Nowoczesne placówki</StyledTitle>
           <StyledText>
             Oferujemy świadczenie pełnej opieki zdrowotnej od diagnostyki po leczenie kompleksowe i
             szpitalne

@@ -3,45 +3,36 @@ import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Button from 'components/elements/Button';
+import Link from 'components/elements/Link';
+import Name from 'components/elements/Name';
+import Spec from 'components/elements/Spec';
+import Text from 'components/elements/Text';
+import Title from 'components/elements/Title';
 import specPhoto1 from 'assets/images/spec1.png';
 import specPhoto2 from 'assets/images/spec2.png';
 import specPhoto3 from 'assets/images/spec3.png';
 
 const StyledWrapper = styled(Container)`
   position: relative;
-  margin: 80px auto 0;
-  width: 100%;
+  margin: 80px auto 120px;
   text-align: center;
 `;
 
 const InnerWrapper = styled.div`
-  margin: 0 32px;
   position: relative;
   min-height: 480px;
 `;
 
-const StyledName = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.xl};
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.2px;
-  color: ${({ theme }) => theme.dimgrey};
-`;
-
-const StyledText = styled.p`
+const StyledText = styled(Text)`
   padding: 32px 40px 56px;
-  font-size: ${({ theme }) => theme.fontSize.s};
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.2px;
-  color: ${({ theme }) => theme.mediumgrey};
 `;
 
 const HomeSpecialists = () => (
   <StyledWrapper>
     <Row>
       <Col>
-        <StyledName>Specjaliści</StyledName>
+        <Title>Specjaliści</Title>
         <StyledText>
           Najlepsi specjaliści w naszej okolicy pracują właśnie znami. Renomowane grono lekarzy,
           <br />
@@ -49,7 +40,6 @@ const HomeSpecialists = () => (
         </StyledText>
       </Col>
     </Row>
-
     <Carousel
       additionalTransfrom={0}
       arrows={false}
@@ -85,14 +75,24 @@ const HomeSpecialists = () => (
     >
       <InnerWrapper>
         <img src={specPhoto1} alt="specialist" />
+        <Name>Adam Kowalski</Name>
+        <Spec>Ginekolog</Spec>
+        <Link href="...">Więcej o lekarzu</Link>
       </InnerWrapper>
       <InnerWrapper>
         <img src={specPhoto2} alt="specialist" />
+        <Name>Jan Nowak</Name>
+        <Spec>Ortopeda</Spec>
+        <Link href="...">Więcej o lekarzu</Link>
       </InnerWrapper>
       <InnerWrapper>
         <img src={specPhoto3} alt="specialist" />
+        <Name>Krystyna Babicz</Name>
+        <Spec>Endokrynolog</Spec>
+        <Link href="...">Więcej o lekarzu</Link>
       </InnerWrapper>
     </Carousel>
+    <Button>Więcej specjalistów</Button>
   </StyledWrapper>
 );
 

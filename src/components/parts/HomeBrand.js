@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import Text from 'components/elements/Text';
+import Title from 'components/elements/Title';
 import doctorIcon from 'assets/icons/doctor.svg';
 import pharmacyIcon from 'assets/icons/pharmacy.svg';
 import heartIcon from 'assets/icons/heartbeat.svg';
@@ -11,28 +13,15 @@ const StyledWrapper = styled(Container)`
   text-align: center;
 `;
 
-const StyledName = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.xl};
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.2px;
-  color: ${({ theme }) => theme.dimgrey};
-`;
-
-const StyledText = styled.p`
+const StyledText = styled(Text)`
   padding: 32px 40px 56px;
-  font-size: ${({ theme }) => theme.fontSize.s};
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.2px;
-  color: ${({ theme }) => theme.mediumgrey};
 `;
 
 const HomeBrand = () => (
   <StyledWrapper>
     <Row>
       <Col>
-        <StyledName>Novea Clinic</StyledName>
+        <Title>Novea Clinic</Title>
         <StyledText>
           Prywatne centrum medyczne Novea&nbsp;Clinic&nbsp;Sp.&nbsp;z&nbsp;o.o.
           <br />

@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Button from 'components/elements/Button';
 import slide1 from 'assets/images/slide1.jpg';
+import slide2 from 'assets/images/slide2.jpg';
 
 const CarouselWrapper = styled.div`
   position: relative;
@@ -15,11 +17,15 @@ const CarouselWrapper = styled.div`
 const StyledWrapper = styled.div`
   position: relative;
   width: 100vw;
-  min-height: 560px;
-  background-image: url(${slide1});
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  height: 560px;
+`;
+
+const StyledBackground = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
 `;
 
 const InnerWrapper = styled.div`
@@ -54,18 +60,6 @@ const StyledText = styled.p`
   color: ${({ theme }) => theme.white};
 `;
 
-const StyledButton = styled.button`
-  width: 212px;
-  height: 40px;
-  line-height: 1.43;
-  letter-spacing: 0.53px;
-  color: ${({ theme }) => theme.white};
-  border: none;
-  border-radius: 4px;
-  background-color: ${({ theme }) => theme.springgreen};
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.15);
-`;
-
 const HomeSlider = () => (
   <CarouselWrapper>
     <Carousel
@@ -95,21 +89,24 @@ const HomeSlider = () => (
       swipeable
     >
       <StyledWrapper>
+        <StyledBackground src={slide1} alt="slide" />
         <InnerWrapper>
           <StyledTitle>Wykwalifikowany zespół specjalistów</StyledTitle>
           <StyledText>
             Nasi lekarze zapewniają najwyższy standard profesjonalnej opieki zdrowotnej
           </StyledText>
-          <StyledButton>Sprawdź wolne terminy</StyledButton>
+          <Button>Sprawdź wolne terminy</Button>
         </InnerWrapper>
       </StyledWrapper>
       <StyledWrapper>
+        <StyledBackground src={slide2} alt="slide" />
         <InnerWrapper>
-          <StyledTitle>Wykwalifikowany zespół specjalistów</StyledTitle>
+          <StyledTitle>Nowoczesne placówki NOVEA</StyledTitle>
           <StyledText>
-            Nasi lekarze zapewniają najwyższy standard profesjonalnej opieki zdrowotnej
+            Oferujemy świadczenie pełnej opieki zdrowotnej od diagnostyki po leczenie kompleksowe i
+            szpitalne
           </StyledText>
-          <StyledButton>Sprawdź wolne terminy</StyledButton>
+          <Button>Sprawdź ofertę</Button>
         </InnerWrapper>
       </StyledWrapper>
     </Carousel>

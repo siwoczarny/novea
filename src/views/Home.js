@@ -1,11 +1,13 @@
 import React from 'react';
-import HomeCarousel from 'components/parts/HomeCarousel';
+import HomeSlider from 'components/parts/HomeSlider';
 import HomeBrand from 'components/parts/HomeBrand';
+import HomeSpecialists from 'components/parts/HomeSpecialists';
 
 const Home = () => (
   <>
-    <HomeCarousel />
+    <HomeSlider />
     <HomeBrand />
+    <HomeSpecialists />
   </>
 );
 

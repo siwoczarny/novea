@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import photo1 from 'assets/images/2224.jpg';
+import slide1 from 'assets/images/slide1.jpg';
 
 const CarouselWrapper = styled.div`
   position: relative;
@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
   position: relative;
   width: 100vw;
   min-height: 560px;
-  background-image: url(${photo1});
+  background-image: url(${slide1});
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -66,7 +66,7 @@ const StyledButton = styled.button`
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.15);
 `;
 
-const HomeCarousel = () => (
+const HomeSlider = () => (
   <CarouselWrapper>
     <Carousel
       additionalTransfrom={0}
@@ -91,7 +91,6 @@ const HomeCarousel = () => (
         },
       }}
       showDots
-      sliderClass=""
       slidesToSlide={1}
       swipeable
     >
@@ -117,4 +116,4 @@ const HomeCarousel = () => (
   </CarouselWrapper>
 );
 
-export default HomeCarousel;
+export default HomeSlider;

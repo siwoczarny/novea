@@ -6,10 +6,10 @@ import photo1 from 'assets/images/2224.jpg';
 
 const CarouselWrapper = styled.div`
   position: relative;
+  margin: 84px 0 0;
   padding: 0 0 30px;
   width: 100%;
   height: 100%;
-  z-index: 1;
 `;
 
 const StyledWrapper = styled.div`
@@ -71,15 +71,12 @@ const HomeCarousel = () => (
     <Carousel
       additionalTransfrom={0}
       arrows={false}
-      autoPlaySpeed={3000}
+      autoPlay
+      autoPlaySpeed={5000}
       centerMode={false}
-      className=""
-      containerClass=""
-      dotListClass=""
       draggable
       focusOnSelect={false}
       infinite
-      itemClass=""
       keyBoardControl
       minimumTouchDrag={80}
       renderButtonGroupOutside={false}
@@ -88,21 +85,7 @@ const HomeCarousel = () => (
         desktop: {
           breakpoint: {
             max: 3000,
-            min: 1024,
-          },
-          items: 1,
-        },
-        mobile: {
-          breakpoint: {
-            max: 464,
             min: 0,
-          },
-          items: 1,
-        },
-        tablet: {
-          breakpoint: {
-            max: 1024,
-            min: 464,
           },
           items: 1,
         },

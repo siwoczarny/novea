@@ -8,11 +8,16 @@ import fontM from 'assets/icons/aa.svg';
 import fontL from 'assets/icons/aaa.svg';
 
 const StyledNav = styled(Nav)`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   padding: 0 16px;
   height: 28px;
   display: flex;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.midnightblue};
+  z-index: 999;
 `;
 
 const StyledLink = styled.a`
@@ -26,6 +31,13 @@ const StyledLink = styled.a`
   }
 `;
 
+const StyledSpan = styled.span`
+  display: none;
+  @media (min-width: 992px) {
+    display: inherit;
+  }
+`;
+
 const StyledButton = styled.button`
   background: transparent;
   border: none;
@@ -35,10 +47,12 @@ const ActionBar = () => (
   <StyledNav>
     <Nav.Item>
       <StyledLink href="tel: 111-222-333">
-        <img src={phoneIcon} alt="phone" /> 111 222 333
+        <img src={phoneIcon} alt="phone" />
+        <StyledSpan> 111 222 333</StyledSpan>
       </StyledLink>
       <StyledLink variant="white" href="mailto: biuro@noveaclinic.pl">
-        <img src={mailIcon} alt="phone" /> biuro@noveaclinic.pl
+        <img src={mailIcon} alt="phone" />
+        <StyledSpan> biuro@noveaclinic.pl</StyledSpan>
       </StyledLink>
     </Nav.Item>
     <Nav.Item>

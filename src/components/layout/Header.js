@@ -5,6 +5,10 @@ import logo from 'assets/logo/logo-nav.svg';
 import plusIcon from 'assets/icons/plus.svg';
 
 const StyledNavbar = styled(Navbar)`
+  position: fixed;
+  top: 28px;
+  right: 0;
+  left: 0;
   padding: 7px 16px;
   height: 56px;
   display: flex;

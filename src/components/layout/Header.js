@@ -28,6 +28,7 @@ const StyledToggle = styled(Navbar.Toggle)`
 `;
 
 const StyledButton = styled(Button)`
+  margin: 0 12px 0 0;
   display: inherit;
   width: 32px;
   height: 32px;

@@ -5,6 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Button from 'components/elements/Button';
 import slide1 from 'assets/images/slide1.jpg';
 import slide2 from 'assets/images/slide2.jpg';
+import slide3 from 'assets/images/slide3.jpg';
 
 const CarouselWrapper = styled.div`
   position: relative;
@@ -17,7 +18,7 @@ const CarouselWrapper = styled.div`
 const StyledWrapper = styled.div`
   position: relative;
   width: 100vw;
-  height: 560px;
+  height: calc(100vh - 128px);
 `;
 
 const StyledBackground = styled.img`
@@ -31,7 +32,7 @@ const StyledBackground = styled.img`
 const InnerWrapper = styled.div`
   position: absolute;
   width: 320px;
-  top: 50%;
+  top: 45%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -101,12 +102,22 @@ const HomeSlider = () => (
       <StyledWrapper>
         <StyledBackground src={slide2} alt="slide" />
         <InnerWrapper>
-          <StyledTitle>Nowoczesne placówki</StyledTitle>
+          <StyledTitle>Nowoczesne placówki medyczne</StyledTitle>
           <StyledText>
             Oferujemy świadczenie pełnej opieki zdrowotnej od diagnostyki po leczenie kompleksowe i
             szpitalne
           </StyledText>
           <Button>Sprawdź ofertę</Button>
+        </InnerWrapper>
+      </StyledWrapper>
+      <StyledWrapper>
+        <StyledBackground src={slide3} alt="slide" />
+        <InnerWrapper>
+          <StyledTitle>COVID-19: informacje i zalecenia</StyledTitle>
+          <StyledText>
+            Zapoznaj się z obecnymi zasadami i ograniczeniami ze względu na obecność koronawirusa.
+          </StyledText>
+          <Button>Sprawdź aktualności</Button>
         </InnerWrapper>
       </StyledWrapper>
     </Carousel>

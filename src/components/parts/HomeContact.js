@@ -31,7 +31,7 @@ const InnerWrapper = styled.div`
     position: absolute;
     width: 400px;
     top: 50%;
-    right: 20%;
+    right: 25%;
     border-radius: 4px;
     box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.15), -2px -2px 13px 0 rgba(0, 0, 0, 0.1);
     transform: translate(50%, -50%);

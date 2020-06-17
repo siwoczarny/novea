@@ -5,7 +5,7 @@ import fbIcon from 'assets/icons/facebook.svg';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  height: 100px;
+  height: 176px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,6 @@ const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.dimgrey};
   z-index: 999;
   @media (min-width: 992px) {
-    height: 176px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -21,7 +20,19 @@ const StyledWrapper = styled.div`
 
 const InnerWappper = styled.div`
   display: flex;
+  height: min-content;
   flex-direction: column;
+  justify-content: flex-start;
+
+  ${({ center }) =>
+    center &&
+    css`
+      justify-content: center;
+    `}
+
+  @media (min-width: 992px) {
+    height: 144px;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -61,7 +72,7 @@ const StyledCaption = styled.p`
 
 const Footer = () => (
   <StyledWrapper>
-    <InnerWappper>
+    <InnerWappper center>
       <img src={logo} alt="logo" />
     </InnerWappper>
     <InnerWappper>

@@ -44,7 +44,7 @@ const HomeSpecialists = () => (
       additionalTransfrom={0}
       arrows={false}
       autoPlay
-      autoPlaySpeed={5000}
+      autoPlaySpeed={3000}
       centerMode={false}
       draggable
       focusOnSelect={false}

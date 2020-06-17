@@ -4,6 +4,7 @@ import HomeBrand from 'components/parts/HomeBrand';
 import HomeSpecialists from 'components/parts/HomeSpecialists';
 import HomeJumbotron from 'components/parts/HomeJumbotron';
 import HomeAbout from 'components/parts/HomeAbout';
+import HomeContact from 'components/parts/HomeContact';
 
 const Home = () => (
   <>
@@ -12,6 +13,7 @@ const Home = () => (
     <HomeSpecialists />
     <HomeJumbotron />
     <HomeAbout />
+    <HomeContact />
   </>
 );
 

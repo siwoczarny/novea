@@ -66,7 +66,7 @@ const HomeSlider = () => (
       additionalTransfrom={0}
       arrows={false}
       autoPlay
-      autoPlaySpeed={5000}
+      autoPlaySpeed={8000}
       centerMode={false}
       draggable
       focusOnSelect={false}

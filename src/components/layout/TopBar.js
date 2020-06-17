@@ -50,8 +50,8 @@ const ActionBar = () => (
         <img src={phoneIcon} alt="phone" />
         <StyledSpan> 111 222 333</StyledSpan>
       </StyledLink>
-      <StyledLink variant="white" href="mailto: biuro@noveaclinic.pl">
-        <img src={mailIcon} alt="phone" />
+      <StyledLink href="mailto: biuro@noveaclinic.pl">
+        <img src={mailIcon} alt="mail" />
         <StyledSpan> biuro@noveaclinic.pl</StyledSpan>
       </StyledLink>
     </Nav.Item>

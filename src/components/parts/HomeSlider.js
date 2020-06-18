@@ -9,7 +9,6 @@ import slide3 from 'assets/images/slide3.jpg';
 
 const CarouselWrapper = styled.div`
   position: relative;
-  margin: 84px 0 0;
   padding: 0 0 30px;
   width: 100%;
   height: 100%;

@@ -77,7 +77,7 @@ const StyledLink = styled(Nav.Link)`
 const Menu = () => (
   <StyledNavbar expand="lg">
     <StyledToggle aria-controls="basic-navbar-nav" />
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="/">
       <img src={logo} alt="logo" />
     </Navbar.Brand>
     <StyledButton />
@@ -87,7 +87,7 @@ const Menu = () => (
       <StyledLink href="#cennik">Cennik</StyledLink>
       <StyledLink href="#onas">O nas</StyledLink>
       <StyledLink href="#aktualnosci">Aktualności</StyledLink>
-      <StyledLink href="#kontakt">Kontakt</StyledLink>
+      <StyledLink href="/contact">Kontakt</StyledLink>
       <StyledLink focus href="#rezerwuj">
         Rezerwuj
       </StyledLink>

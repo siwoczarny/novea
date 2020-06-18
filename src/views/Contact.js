@@ -8,35 +8,41 @@ import flagIcon from 'assets/icons/flag.svg';
 
 const StyledWrapper = styled.div`
   position: relative;
-  height: 624px;
+  padding: 84px 0 176px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 
 const StyledMap = styled.iframe`
+  padding: 80px 0 0;
   width: 100%;
-  height: 160px;
+  max-width: 560px;
+  height: 400px;
   border: none;
   @media (min-width: 992px) {
-    height: 100%;
+    padding: 40px 0;
+    width: 50%;
+    border-radius: 8px;
   }
 `;
 
 const InnerWrapper = styled.div`
-  padding: 80px 0 40px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #fff;
-  z-index: 899;
   @media (min-width: 992px) {
-    padding: 32px 0 80px;
-    position: absolute;
-    width: 400px;
-    top: 50%;
-    right: 25%;
-    border-radius: 4px;
-    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.15), -2px -2px 13px 0 rgba(0, 0, 0, 0.1);
-    transform: translate(50%, -50%);
+    padding: 80px 0;
   }
 `;
 
@@ -56,7 +62,7 @@ const StyledIcon = styled.img`
   padding: 0 24px 0 0;
 `;
 
-const HomeContact = () => (
+const Contact = () => (
   <StyledWrapper>
     <InnerWrapper>
       <Title>Kontakt</Title>
@@ -91,4 +97,4 @@ const HomeContact = () => (
   </StyledWrapper>
 );
 
-export default HomeContact;
+export default Contact;

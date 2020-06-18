@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Nav } from 'react-bootstrap';
 import phoneIcon from 'assets/icons/call.svg';
@@ -43,7 +44,7 @@ const StyledButton = styled.button`
   border: none;
 `;
 
-const ActionBar = () => (
+const TopBar = ({ changeFont }) => (
   <StyledNav>
     <Nav.Item>
       <StyledLink href="tel: 111-222-333">
@@ -56,17 +57,21 @@ const ActionBar = () => (
       </StyledLink>
     </Nav.Item>
     <Nav.Item>
-      <StyledButton>
-        <img src={fontS} alt="font S" />
+      <StyledButton onClick={changeFont}>
+        <img src={fontS} alt="font changing" />
       </StyledButton>
-      <StyledButton>
-        <img src={fontM} alt="font M" />
+      <StyledButton onClick={changeFont}>
+        <img src={fontM} alt="font changing" />
       </StyledButton>
-      <StyledButton>
-        <img src={fontL} alt="font L" />
+      <StyledButton onClick={changeFont}>
+        <img src={fontL} alt="font changing" />
       </StyledButton>
     </Nav.Item>
   </StyledNav>
 );
 
-export default ActionBar;
+TopBar.propTypes = {
+  changeFont: PropTypes.func.isRequired,
+};
+
+export default TopBar;

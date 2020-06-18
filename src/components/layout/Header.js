@@ -76,27 +76,46 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const Menu = () => (
-  <StyledNavbar expand="lg">
-    <StyledToggle aria-controls="basic-navbar-nav" />
-    <Navbar.Brand>
-      <NavLink to="/">
-        <img src={logo} alt="logo" />
-      </NavLink>
-    </Navbar.Brand>
-    <StyledButton as={NavLink} to="/reservations" />
-    <StyledList id="basic-navbar-nav" className="justify-content-end">
-      <StyledLink to="/services">Oferta</StyledLink>
-      <StyledLink to="/specialists">Specjaliści</StyledLink>
-      <StyledLink to="/prices">Cennik</StyledLink>
-      <StyledLink to="/about">O nas</StyledLink>
-      <StyledLink to="/news">Aktualności</StyledLink>
-      <StyledLink to="/contact">Kontakt</StyledLink>
-      <StyledLink focus to="/reservations">
-        Rezerwuj
-      </StyledLink>
-    </StyledList>
-  </StyledNavbar>
-);
+const Header = () => {
+  const [expanded, setExpanded] = React.useState(false);
 
-export default Menu;
+  return (
+    <StyledNavbar expand="lg" expanded={expanded}>
+      <StyledToggle
+        aria-controls="basic-navbar-nav"
+        onClick={() => setExpanded(expanded ? false : 'expanded')}
+      />
+      <Navbar.Brand>
+        <NavLink to="/">
+          <img src={logo} alt="logo" />
+        </NavLink>
+      </Navbar.Brand>
+      <StyledButton as={NavLink} to="/reservations" />
+      <StyledList id="basic-navbar-nav" className="justify-content-end">
+        <StyledLink to="/services" onClick={() => setExpanded(false)}>
+          Oferta
+        </StyledLink>
+        <StyledLink to="/specialists" onClick={() => setExpanded(false)}>
+          Specjaliści
+        </StyledLink>
+        <StyledLink to="/prices" onClick={() => setExpanded(false)}>
+          Cennik
+        </StyledLink>
+        <StyledLink to="/about" onClick={() => setExpanded(false)}>
+          O nas
+        </StyledLink>
+        <StyledLink to="/news" onClick={() => setExpanded(false)}>
+          Aktualności
+        </StyledLink>
+        <StyledLink to="/contact" onClick={() => setExpanded(false)}>
+          Kontakt
+        </StyledLink>
+        <StyledLink focus to="/reservations onClick={() => setExpanded(false)}">
+          Rezerwuj
+        </StyledLink>
+      </StyledList>
+    </StyledNavbar>
+  );
+};
+
+export default Header;

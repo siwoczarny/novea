@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49ac6b69edd20ec591006149d4abc883",
+    "revision": "124302eb2ce8b6785e02e115843c2020",
     "url": "/novea/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/novea/static/js/2.db54d6bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d6b752601b0cdb1cc696",
-    "url": "/novea/static/js/main.5e47db32.chunk.js"
+    "revision": "0a66d4062c20cc17b2cc",
+    "url": "/novea/static/js/main.9f5c2a46.chunk.js"
   },
   {
     "revision": "e58587895b70632461ad",

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/novea/static/js/main.5e47db32.chunk.js",
-    "main.js.map": "/novea/static/js/main.5e47db32.chunk.js.map",
+    "main.js": "/novea/static/js/main.9f5c2a46.chunk.js",
+    "main.js.map": "/novea/static/js/main.9f5c2a46.chunk.js.map",
     "runtime-main.js": "/novea/static/js/runtime-main.888e20d7.js",
     "runtime-main.js.map": "/novea/static/js/runtime-main.888e20d7.js.map",
     "static/css/2.51585a46.chunk.css": "/novea/static/css/2.51585a46.chunk.css",
     "static/js/2.db54d6bb.chunk.js": "/novea/static/js/2.db54d6bb.chunk.js",
     "static/js/2.db54d6bb.chunk.js.map": "/novea/static/js/2.db54d6bb.chunk.js.map",
     "index.html": "/novea/index.html",
-    "precache-manifest.8512cc3055893a6bc2a29a2262c025f4.js": "/novea/precache-manifest.8512cc3055893a6bc2a29a2262c025f4.js",
+    "precache-manifest.3cabcf6417b007487a540f4ae9caefec.js": "/novea/precache-manifest.3cabcf6417b007487a540f4ae9caefec.js",
     "service-worker.js": "/novea/service-worker.js",
     "static/css/2.51585a46.chunk.css.map": "/novea/static/css/2.51585a46.chunk.css.map",
     "static/js/2.db54d6bb.chunk.js.LICENSE.txt": "/novea/static/js/2.db54d6bb.chunk.js.LICENSE.txt",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.888e20d7.js",
     "static/css/2.51585a46.chunk.css",
     "static/js/2.db54d6bb.chunk.js",
-    "static/js/main.5e47db32.chunk.js"
+    "static/js/main.9f5c2a46.chunk.js"
   ]
 }

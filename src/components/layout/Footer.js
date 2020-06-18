@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import logo from 'assets/logo/logo-foot.svg';
 import fbIcon from 'assets/icons/facebook.svg';
 
@@ -37,7 +38,7 @@ const InnerWappper = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(NavLink)`
   display: none;
   padding: 8px 0;
   font-size: ${({ theme }) => theme.fontSize.xxs};
@@ -78,24 +79,24 @@ const Footer = () => (
       <img src={logo} alt="logo" />
     </InnerWappper>
     <InnerWappper>
-      <StyledLink href="#">O nas</StyledLink>
-      <StyledLink href="#">Specjaliści</StyledLink>
-      <StyledLink href="#">Usługi</StyledLink>
-      <StyledLink href="#">Cennik</StyledLink>
+      <StyledLink to="/about">O nas</StyledLink>
+      <StyledLink to="/specialists">Specjaliści</StyledLink>
+      <StyledLink to="/services">Usługi</StyledLink>
+      <StyledLink to="/prices">Cennik</StyledLink>
     </InnerWappper>
     <InnerWappper>
-      <StyledLink href="#">Rezerwacje</StyledLink>
-      <StyledLink href="#">Aktualności</StyledLink>
-      <StyledLink href="#">Wydarzenia</StyledLink>
-      <StyledLink href="#">Kontakt</StyledLink>
+      <StyledLink to="/reservations">Rezerwacje</StyledLink>
+      <StyledLink to="/news">Aktualności</StyledLink>
+      <StyledLink to="/news">Wydarzenia</StyledLink>
+      <StyledLink to="/contact">Kontakt</StyledLink>
     </InnerWappper>
     <InnerWappper>
-      <StyledLink href="#">Polityka prywatności</StyledLink>
-      <StyledLink href="#">Zasady użytkowania</StyledLink>
-      <StyledLink href="#">Mapa strony</StyledLink>
+      <StyledLink to="/about">Polityka prywatności</StyledLink>
+      <StyledLink to="/about">Zasady użytkowania</StyledLink>
+      <StyledLink to="/contact">Mapa strony</StyledLink>
     </InnerWappper>
     <InnerWappper>
-      <StyledLink flex href="#">
+      <StyledLink flex to="https://www.facebook.com/">
         Znajdź nas na facebook.com
         <img src={fbIcon} alt="facebook icon" />
       </StyledLink>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import logo from 'assets/logo/logo-nav.svg';
 import plusIcon from 'assets/icons/plus.svg';
 
@@ -54,7 +55,8 @@ const StyledList = styled(Navbar.Collapse)`
   }
 `;
 
-const StyledLink = styled(Nav.Link)`
+const StyledLink = styled(NavLink)`
+  display: block;
   padding: 16px 24px;
   font-size: ${({ theme }) => theme.fontSize.xs};
   font-weight: 400;
@@ -77,18 +79,20 @@ const StyledLink = styled(Nav.Link)`
 const Menu = () => (
   <StyledNavbar expand="lg">
     <StyledToggle aria-controls="basic-navbar-nav" />
-    <Navbar.Brand href="/">
-      <img src={logo} alt="logo" />
+    <Navbar.Brand>
+      <NavLink to="/">
+        <img src={logo} alt="logo" />
+      </NavLink>
     </Navbar.Brand>
-    <StyledButton />
+    <StyledButton as={NavLink} to="/reservations" />
     <StyledList id="basic-navbar-nav" className="justify-content-end">
-      <StyledLink href="#oferta">Oferta</StyledLink>
-      <StyledLink href="#spacjalisci">Specjaliści</StyledLink>
-      <StyledLink href="#cennik">Cennik</StyledLink>
-      <StyledLink href="#onas">O nas</StyledLink>
-      <StyledLink href="#aktualnosci">Aktualności</StyledLink>
-      <StyledLink href="/contact">Kontakt</StyledLink>
-      <StyledLink focus href="#rezerwuj">
+      <StyledLink to="/services">Oferta</StyledLink>
+      <StyledLink to="/specialists">Specjaliści</StyledLink>
+      <StyledLink to="/prices">Cennik</StyledLink>
+      <StyledLink to="/about">O nas</StyledLink>
+      <StyledLink to="/news">Aktualności</StyledLink>
+      <StyledLink to="/contact">Kontakt</StyledLink>
+      <StyledLink focus to="/reservations">
         Rezerwuj
       </StyledLink>
     </StyledList>

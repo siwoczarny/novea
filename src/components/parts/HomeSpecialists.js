@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Button from 'components/elements/Button';
@@ -77,22 +78,24 @@ const HomeSpecialists = () => (
         <img src={specPhoto1} alt="specialist" />
         <Name>Adam Kowalski</Name>
         <Spec>Ginekolog</Spec>
-        <Link href="...">Więcej o lekarzu</Link>
+        <Link to="...">Więcej o lekarzu</Link>
       </InnerWrapper>
       <InnerWrapper>
         <img src={specPhoto2} alt="specialist" />
         <Name>Jan Nowak</Name>
         <Spec>Ortopeda</Spec>
-        <Link href="...">Więcej o lekarzu</Link>
+        <Link to="...">Więcej o lekarzu</Link>
       </InnerWrapper>
       <InnerWrapper>
         <img src={specPhoto3} alt="specialist" />
         <Name>Krystyna Babicz</Name>
         <Spec>Endokrynolog</Spec>
-        <Link href="...">Więcej o lekarzu</Link>
+        <Link to="...">Więcej o lekarzu</Link>
       </InnerWrapper>
     </Carousel>
-    <Button>Więcej specjalistów</Button>
+    <Button as={NavLink} to="/specialists">
+      Więcej specjalistów
+    </Button>
   </StyledWrapper>
 );
 

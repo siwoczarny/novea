@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { NavLink } from 'react-router-dom';
 import Button from 'components/elements/Button';
 import slide1 from 'assets/images/slide1.jpg';
 import slide2 from 'assets/images/slide2.jpg';
@@ -95,7 +96,9 @@ const HomeSlider = () => (
           <StyledText>
             Nasi lekarze zapewniają najwyższy standard profesjonalnej opieki zdrowotnej
           </StyledText>
-          <Button>Sprawdź wolne terminy</Button>
+          <Button as={NavLink} to="/reservations">
+            Sprawdź wolne terminy
+          </Button>
         </InnerWrapper>
       </StyledWrapper>
       <StyledWrapper>
@@ -106,7 +109,10 @@ const HomeSlider = () => (
             Oferujemy świadczenie pełnej opieki zdrowotnej od diagnostyki po leczenie kompleksowe i
             szpitalne
           </StyledText>
-          <Button>Sprawdź ofertę</Button>
+          <Button as={NavLink} to="/services">
+            {' '}
+            Sprawdź ofertę
+          </Button>
         </InnerWrapper>
       </StyledWrapper>
       <StyledWrapper>
@@ -116,7 +122,9 @@ const HomeSlider = () => (
           <StyledText>
             Zapoznaj się z obecnymi zasadami i ograniczeniami ze względu na obecność koronawirusa.
           </StyledText>
-          <Button>Sprawdź aktualności</Button>
+          <Button as={NavLink} to="/news">
+            Sprawdź aktualności
+          </Button>
         </InnerWrapper>
       </StyledWrapper>
     </Carousel>

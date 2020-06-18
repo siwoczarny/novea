@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import Button from 'components/elements/Button';
 import Title from 'components/elements/Title';
 import Text from 'components/elements/Text';
@@ -47,7 +48,9 @@ const HomeAbout = () => (
           Już dzisiaj zadbaj o swoje zdrowie. Zarezerwuj termin konsultacji u naszego specjalisty i
           ciesz się zdrowym życiem
         </StyledText>
-        <Button>Więcej o nas</Button>
+        <Button as={NavLink} to="/about">
+          Więcej o nas
+        </Button>
       </StyledCol>
     </Row>
   </StyledWrapper>

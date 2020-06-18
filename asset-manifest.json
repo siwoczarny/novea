@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/novea/static/js/main.494eb5e5.chunk.js",
-    "main.js.map": "/novea/static/js/main.494eb5e5.chunk.js.map",
+    "main.js": "/novea/static/js/main.afed111d.chunk.js",
+    "main.js.map": "/novea/static/js/main.afed111d.chunk.js.map",
     "runtime-main.js": "/novea/static/js/runtime-main.888e20d7.js",
     "runtime-main.js.map": "/novea/static/js/runtime-main.888e20d7.js.map",
     "static/css/2.51585a46.chunk.css": "/novea/static/css/2.51585a46.chunk.css",
-    "static/js/2.390b1258.chunk.js": "/novea/static/js/2.390b1258.chunk.js",
-    "static/js/2.390b1258.chunk.js.map": "/novea/static/js/2.390b1258.chunk.js.map",
+    "static/js/2.7870f679.chunk.js": "/novea/static/js/2.7870f679.chunk.js",
+    "static/js/2.7870f679.chunk.js.map": "/novea/static/js/2.7870f679.chunk.js.map",
     "index.html": "/novea/index.html",
-    "precache-manifest.b68557178046528aa8023bf29f5dd3ca.js": "/novea/precache-manifest.b68557178046528aa8023bf29f5dd3ca.js",
+    "precache-manifest.000c341e3a5f056000765f6377c4eab7.js": "/novea/precache-manifest.000c341e3a5f056000765f6377c4eab7.js",
     "service-worker.js": "/novea/service-worker.js",
     "static/css/2.51585a46.chunk.css.map": "/novea/static/css/2.51585a46.chunk.css.map",
-    "static/js/2.390b1258.chunk.js.LICENSE.txt": "/novea/static/js/2.390b1258.chunk.js.LICENSE.txt",
+    "static/js/2.7870f679.chunk.js.LICENSE.txt": "/novea/static/js/2.7870f679.chunk.js.LICENSE.txt",
     "static/media/a.svg": "/novea/static/media/a.732f0462.svg",
     "static/media/aa.svg": "/novea/static/media/aa.7053706f.svg",
     "static/media/aaa.svg": "/novea/static/media/aaa.010677d0.svg",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.888e20d7.js",
     "static/css/2.51585a46.chunk.css",
-    "static/js/2.390b1258.chunk.js",
-    "static/js/main.494eb5e5.chunk.js"
+    "static/js/2.7870f679.chunk.js",
+    "static/js/main.afed111d.chunk.js"
   ]
 }

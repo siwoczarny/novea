@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a1b7a88f4218b9cb12ef1463203ae72",
+    "revision": "56162077e59b4eec605184d01658bf07",
     "url": "/novea/index.html"
   },
   {
-    "revision": "3f32f7bb0487b2dbe7e6",
+    "revision": "e9f549c04caac843531b",
     "url": "/novea/static/css/2.51585a46.chunk.css"
   },
   {
-    "revision": "3f32f7bb0487b2dbe7e6",
-    "url": "/novea/static/js/2.db54d6bb.chunk.js"
+    "revision": "e9f549c04caac843531b",
+    "url": "/novea/static/js/2.390b1258.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/novea/static/js/2.db54d6bb.chunk.js.LICENSE.txt"
+    "url": "/novea/static/js/2.390b1258.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f4d5c911bc44f63665cd",
-    "url": "/novea/static/js/main.188aa12a.chunk.js"
+    "revision": "e3fce60182c599faa80d",
+    "url": "/novea/static/js/main.77eb65fe.chunk.js"
   },
   {
     "revision": "e58587895b70632461ad",
